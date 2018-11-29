@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="home.css">
+<script type="text/javascript">
+            var picPaths = ['IMG_4592.jpg','DSC_0106.jpg','IMG_4324.jpg','IMG_4746.jpg'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,2000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('imgBanner');
+                swapImage();
+            }
+        </script>
+</head>
+<body>
+	<div class="heading">
+		<div class="logo">
+			<img src="PicsArt_07-02-09.09.46.jpg" height="100px" width="85px">
+		</div>
+		<div class="header">
+			<h1><strong>PRATHIK Y CHOWTA</h1></strong>
+			<font><i>My Details</i></font>
+		</div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a class="active" href="gallery.html">Gallery</a>
+		</div>
+	</div>
+	<div class="main">
+		<img id="imgBanner" src="" alt="" width="100%" height="480px" />
+	</div>
+	<div class="footer">
+	<center><p>&copy; 4CB15CS077</p></center>
+	</div>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_karthiknmallya&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+</html> 

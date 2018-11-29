@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION PAGE</title>
+<script>
+function register() {
+  alert("Successfully Registered!!!");
+}
+</script>
+<style>
+
+h2{color: white;
+      font-size:25px;
+      text-align:center;
+      }
+p {
+  color: black;
+  text-align: center;
+        }
+button {
+    background-color:#6666ff;
+    color:black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+select{
+color:black;
+ font-size:15px;
+margin: 8px 0;
+ border: none;
+ text-align:center;
+  width: 15%;
+}
+form {
+    border: 3px solid white;
+    width:50%;
+    height:80%;
+    position: relative;
+    top:45%;
+    left:50%;
+    margin-top:10px;
+    margin-left:-25%;
+    background-color:#b3b3ff;
+}
+nav{
+      font-size: 50px;
+      background-color: red;
+    }
+a{
+   float: right;
+  font-size: 20px;
+  margin-top: 15px;
+}
+    option{
+      width:50%;
+      border-radius: 10px;
+    }
+footer{
+      background-color: red;;
+      text-align: center;
+      margin-top:200px;
+      display: auto;
+    }
+
+</style>
+</head>
+<body bgcolor="#E8DAEF">
+<nav><center> REGISTRATION FORM </center>
+  <b><a href="index.html"> HOME </a></b>
+ </nav> <br/><br/>
+
+<form action="">
+<p >FIRST NAME:</p> 
+<p><input type="text" name="firstname" required> 
+  <p>MIDDLE NAME:</p> 
+<p><input type="text" name="midname" required> 
+<p>LAST NAME:</p>
+<p><input type="text" name="lastname" required></p>
+<p>ADDRESS:</P>
+<p><input type="text" name="address" required></p>
+<p>EMAIL:</p>
+<p><input type="text" number="mobile" required></p>
+<p>MOBILE NUMBER:</p>
+<p><input type="text" number="aadhar number" required></p>
+<p>GENDER:</p>
+<select style="margin-left: 42%;">
+ <option  value="MALE">MALE</option>
+  <option value="FEMALE">FEMALE</option>
+</select>
+
+</br>
+<p  style="text-align:center"><button onclick="register()">REGISTER</button></p>
+</form><br/><br/>
+<footer><b>&copy;  PRATHIK CHOWTA(4CB15CS077) </b></footer>
+</html>
